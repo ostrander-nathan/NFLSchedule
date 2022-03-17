@@ -11,7 +11,7 @@ public class NflRepo
 
     public NflRepo()
     {
-        using var reader = new StreamReader("teams.csv");
+        using var reader = new StreamReader("./data/teams.csv");
         using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
         var records = csv.GetRecords<RawData>();
 
