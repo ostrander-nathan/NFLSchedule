@@ -8,5 +8,8 @@ class Program
     {
         var teams = new NflRepo().GetNflTeams();
 
+        var standings = new Standings.StandingRepo();
+
+        
     }
 }
